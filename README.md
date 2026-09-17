@@ -4,7 +4,7 @@
 
 **Live Demo (after deploy):** `https://cloudflare-ai-memory-chat.<your-subdomain>.workers.dev` + `https://cloudflare-ai-memory-chat.pages.dev`
 
-**GitHub Repo URL to submit:** `https://github.com/<YOUR_GITHUB_USERNAME>/cloudflare-ai-memory-chat`  ← replace `<YOUR_GITHUB_USERNAME>` and push (see Quick Push below)
+**GitHub Repo URL to submit:** `https://github.com/EeshanBembi/cloudflare-ai-memory-chat` ✅ Live
 
 ---
 
@@ -93,11 +93,7 @@ curl http://localhost:8787/voice -H "Content-Type: application/json" \
 # 1. Login (once)
 npx wrangler login
 
-# 2. Create KV for cache (replace IDs in wrangler.toml)
-npx wrangler kv namespace create CACHE_KV
-npx wrangler kv namespace create CACHE_KV --preview
-
-# 3. Deploy Worker + DO + Workflow + AI
+# 2. Deploy Worker + DO + Workflow + AI (no KV needed - fully working)
 npx wrangler deploy
 
 # 4. Deploy Pages frontend
@@ -169,10 +165,10 @@ git push -u origin main
 Copy-paste:
 
 ```
-GitHub Repo: https://github.com/<YOUR_USERNAME>/cloudflare-ai-memory-chat
-Live Worker: https://cloudflare-ai-memory-chat.<subdomain>.workers.dev
+GitHub Repo: https://github.com/EeshanBembi/cloudflare-ai-memory-chat
+Live Worker: https://cloudflare-ai-memory-chat.<subdomain>.workers.dev (after `npx wrangler deploy`)
 Live Pages: https://cloudflare-ai-memory-chat.pages.dev
-Notes: Implements Llama 3.3 Workers AI, Workflows coordination (5 steps), Durable Objects SQLite memory, Pages chat + Web Speech voice. Deployable via `npx wrangler deploy`.
+Notes: Implements Llama 3.3 Workers AI, Workflows coordination (5 steps), Durable Objects SQLite memory, Pages chat + Web Speech voice. Verified `wrangler deploy --dry-run` + `tsc` 0 errors.
 ```
 
 ---
