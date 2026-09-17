@@ -1,0 +1,20 @@
+{
+  "name": "cloudflare-ai-memory-chat",
+  "version": "1.0.0",
+  "description": "AI-powered chat+voice app on Cloudflare: Llama 3.3 Workers AI + Workflows + Durable Objects memory + Pages/Realtime",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "deploy:frontend": "wrangler pages deploy frontend/dist",
+    "cf-typegen": "wrangler types"
+  },
+  "dependencies": {
+    "hono": "^4.6.0"
+  },
+  "devDependencies": {
+    "wrangler": "^4.86.0",
+    "typescript": "^5.6.0",
+    "@cloudflare/workers-types": "^4.20240925.0"
+  }
+}

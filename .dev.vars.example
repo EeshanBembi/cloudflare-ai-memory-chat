@@ -1,0 +1,2 @@
+OPENAI_API_KEY=sk-...optional-fallback-for-external-LLM
+MODEL_ID=@cf/meta/llama-3.3-70b-instruct
