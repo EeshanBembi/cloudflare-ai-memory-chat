@@ -23,12 +23,6 @@ name = "ai-memory-workflow"
 binding = "AI_WORKFLOW"
 class_name = "AIMemoryWorkflow"
 
-# KV for fallback cache (optional)
-[[kv_namespaces]]
-binding = "CACHE_KV"
-id = "placeholder-kv-id"
-preview_id = "placeholder-kv-preview-id"
-
 [vars]
 FRONTEND_URL = "https://cloudflare-ai-memory-chat.pages.dev"
 MODEL_ID = "@cf/meta/llama-3.3-70b-instruct"

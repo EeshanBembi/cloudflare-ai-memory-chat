@@ -3,7 +3,6 @@ interface Env {
   AI: Ai;
   MEMORY_DO: DurableObjectNamespace<import("./memory-do").MemoryDO>;
   AI_WORKFLOW: Workflow;
-  CACHE_KV: KVNamespace;
   OPENAI_API_KEY?: string;
   MODEL_ID: string;
   FRONTEND_URL: string;
